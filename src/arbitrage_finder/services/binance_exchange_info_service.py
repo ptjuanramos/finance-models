@@ -7,8 +7,6 @@ from src.arbitrage_finder.services.binance_price_service import BinanceService
 class BinanceExchangeInfoService(BinanceService):
     BASE_URL = "https://api.binance.com/api/v3/exchangeInfo"
 
-    def __init__(self) -> None:
-
     async def get(self) -> PriceStore:
         price_store = PriceStore()
         async with httpx.AsyncClient(timeout=5.0) as client:
