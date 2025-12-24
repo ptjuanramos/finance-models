@@ -1,0 +1,4 @@
+apscheduler==3.11.2
+websockets==15.0.1
+asyncio==4.0.0
+httpx~=0.28.1
